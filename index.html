@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Internet Letter</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: black;
+            font-family: 'Arial', sans-serif;
+            color: yellow;
+        }
+
+        /* Star Wars Logo */
+        .logo-container {
+            position: absolute;
+            width: 100%;
+            top: 10%;
+            display: flex;
+            justify-content: center;
+            opacity: 1;
+            animation: fadeOut 5s ease-out 3s forwards; /* Fades out after 3s */
+        }
+
+        .logo-container img {
+            width: 40%;
+            max-width: 500px;
+        }
+
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        /* Starfield Background */
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            opacity: 0.8;
+            animation: twinkle 3s infinite alternate ease-in-out;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+
+        /* Star Wars Crawl */
+        .star-wars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            perspective: 1000px;
+            overflow: hidden;
+        }
+
+        .crawl {
+            position: absolute;
+            width: 80%;
+            left: 10%;
+            bottom: -150%;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 1.6;
+            transform-origin: 50% 100%;
+            animation: crawl 50s linear infinite;
+        }
+
+        @keyframes crawl {
+            0% { bottom: -150%; transform: rotateX(20deg) translateZ(0); }
+            100% { bottom: 200%; transform: rotateX(20deg) translateZ(-3000px); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Star Wars Logo -->
+    <div class="logo-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Star_Wars_Logo.svg" alt="Star Wars Logo">
+    </div>
+
+    <div class="stars">
+        <!-- Random Stars -->
+        <div class="star" style="top: 10%; left: 20%;"></div>
+        <div class="star" style="top: 40%; left: 60%;"></div>
+        <div class="star" style="top: 80%; left: 10%;"></div>
+        <div class="star" style="top: 30%; left: 90%;"></div>
+        <div class="star" style="top: 50%; left: 50%;"></div>
+        <div class="star" style="top: 70%; left: 70%;"></div>
+        <div class="star" style="top: 20%; left: 80%;"></div>
+        <div class="star" style="top: 90%; left: 40%;"></div>
+    </div>
+
+    <div class="star-wars">
+        <div class="crawl">
+            <p>A long, long time ago, in an Internet very far away...</p>
+            <p>Young Padawan Tigo aimed at becoming a web developer grand master.</p>
+            <p>In search of forbidden knowledge, the boy reached out to Jedi master Briz from the planet of Chicago...</p>
+            <p>In his eternal quest for eternal digital truth, he found inspiration in the works of his classmates.</p>
+            <p>He admired:</p>
+            <p>The cursor drawing mechanics drawn up by <a href="https://red-atagi.github.io/letter-to-the-internet/" target="_blank">Red</a>.</p>
+            <p>The fun red color theme shown by <a href="https://bbroscius.github.io/" target="_blank">Bernadette</a>.</p>
+            <p>The ominous cybersecurity vibe concocted by <a href="https://ncadiche.github.io/letter-to-internet/" target="_blank">Natalyah</a>.</p>
+            <p>The three mantras of design devised by <a href="https://tchan1002.github.io/open-letter/" target="_blank">Toby</a>.</p>
+            <p>The ethereal heavenly ambience crafted by <a href="https://tchan1002.github.io/open-letter/" target="_blank">Diana</a>.</p>
+            <p>The sigma wisdom taught by <a href="https://progamer-chef.github.io/DI-1/" target="_blank">Chris</a>.</p>
+            <p>The chill rubber duckies made by <a href="https://thegoatannie.github.io/css_letter/" target="_blank">Annie</a>.</p>
+            <p>The hidden treasures in the work of <a href="https://shfessuh.github.io/internet_letter/" target="_blank">Sana</a>.</p>
+            <p>The inspiring web-leveraged personal growth of <a href="https://sanaajade.github.io/DearInternet_Sanaa/" target="_blank">Sanaa</a>.</p>
+            <p>The sick animation imagined by <a href="https://ronthekiehn.github.io/internet-letter/" target="_blank">Ron</a>.</p>
+            <p>The chaotic splendor in the internet home of <a href="https://alex-malm.github.io/letter-to-the-internet/" target="_blank">Alex</a>.</p>
+            <p>The warm pink aesthetic in the letter written by <a href="https://oaobielodan.github.io/my-open-letter/" target="_blank">Olufunmilola</a>.</p>
+            <p>The nostalgic quality of the page by <a href="https://canvas.uchicago.edu/courses/62067/assignments/732981" target="_blank">Lonimi</a>.</p>
+            <p>The minimalist opening screen of <a href="https://manuelapinheiro.github.io/letter_to_the_internet_part1/" target="_blank">Manuela</a>.</p>
+            <p>The poetic quality of the letter by <a href="https://yruann.github.io/letter-to-internet/#_3" target="_blank">Ying</a>.</p>
+            <p>And finally, the delightful cat images curated by <a href="https://abigailstarr.github.io/internet-letter/" target="_blank">Abby</a>.</p>
+        </div>
+    </div>
+
+</body>
+</html>
